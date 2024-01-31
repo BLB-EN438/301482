@@ -18,6 +18,7 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import LandingPage from './pages/LandingPage';
 
 /* Theme variables */
 import './theme/variables.css';
@@ -28,12 +29,8 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+      <Route path="/dashboard" render={props => <LandingPage {...props} />} />
+        <Route exact={true} path="/" render={() => <Redirect to="/dashboard" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

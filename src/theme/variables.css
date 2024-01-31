@@ -240,3 +240,12 @@ html {
   https://ionicframework.com/docs/layout/dynamic-font-scaling */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
+.fields {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: bisque;
+	border-radius: 5%;
+	max-width: 80% !important;
+	margin-left: auto;
+	margin-right: auto;
+}
