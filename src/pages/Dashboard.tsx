@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { DeviceInfo } from 'device-info';
 
 interface HomePageProps extends RouteComponentProps<{
-    id: string;
+
 }> { }
 
 const Dashboard: React.FC<HomePageProps> = ({ match, history }) => {
